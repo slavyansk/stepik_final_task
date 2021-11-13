@@ -5,6 +5,11 @@ class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
 
+class BasketPageLocators():
+    BASKET_BTN = (By.CSS_SELECTOR, ".btn-group")
+    BASKET_CONTENT = (By.TAG_NAME, "h2")
+
+
 class LoginPageLocators():
     LOGIN_URL = (By.CSS_SELECTOR, "#login_link")
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
