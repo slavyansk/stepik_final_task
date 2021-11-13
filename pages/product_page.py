@@ -9,7 +9,6 @@ class ProductPage(BasePage):
         add_basket_btn = self.browser.find_element(*ProductPageLocators.ADD_BASKET_BTN)
         add_basket_btn.click()
 
-
     def should_be_add_to_basket_message(self):
         # Сообщение о том, что товар добавлен в корзину.Название товара в сообщении должно совпадать
         # с тем товаром, который вы действительно добавили
