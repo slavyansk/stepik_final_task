@@ -11,7 +11,6 @@ def test_guest_can_add_product_to_basket(browser):
     page = ProductPage(browser, link)
     page.open()
     page.add_to_basket()
-    #page.solve_quiz_and_get_code()
     time.sleep(10)
     page.should_be_add_to_basket_message()
     page.should_be_price_equal_in_basket()
